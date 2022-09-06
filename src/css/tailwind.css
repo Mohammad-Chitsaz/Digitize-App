@@ -1,0 +1,31 @@
+@import url(/src/css/font.css);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-arrow::before,
+.custom-arrow::after {
+  --size: 0.45em;
+
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-arrow::before {
+  top: 35%;
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-bottom: var(--size) solid rgba(0, 0, 0, 0.7);
+}
+
+.custom-arrow::after {
+  top: 65%;
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid rgba(0, 0, 0, 0.7);
+}
