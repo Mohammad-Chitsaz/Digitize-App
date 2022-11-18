@@ -29,3 +29,21 @@
   border-right: var(--size) solid transparent;
   border-top: var(--size) solid rgba(0, 0, 0, 0.7);
 }
+
+input:not(input[type="checkbox"]) {
+  border: 0;
+  outline: 0;
+}
+
+.bread-crumbs span {
+  color: #fb923c;
+}
+
+.bread-crumbs span:last-child {
+  color: #222F5D;
+  opacity: 75%;
+}
+
+.bread-crumbs span:nth-child(odd){
+  cursor: pointer;
+}
